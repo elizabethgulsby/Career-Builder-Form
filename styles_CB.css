@@ -1,0 +1,50 @@
+body {
+	position:  relative;
+	margin:  auto;
+}
+
+h1 span {
+	display:  block;
+	font-size:  16px;
+}
+
+.below-h1 {
+	display:  block;
+}
+
+.staffing-agency {
+	color: #09A0DB;
+}
+
+.required-fields-asterisk {
+	color:  red;
+}
+
+.required-fields {
+	color:  #999999;
+}
+
+.asterisk {
+	color:  red;
+}
+
+input {
+	display: block;
+	width: 100%;
+}
+
+label {
+	width: 100%;
+}
+
+.email-preferences, .recommendations-and-resume {
+	display: block;
+}
+
+button {
+	width: 50%;
+}
+
+.error {
+	color:  red;
+}
