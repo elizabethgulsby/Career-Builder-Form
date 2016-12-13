@@ -63,10 +63,14 @@ $(document).ready(function() {
 			for (var i = 0; i < password.length; i++) {
 				if (password[i].toUpperCase() == password[i]) {
 					//is uppercase!
-					hasUpperCase = true;
+					if(Number.isInteger(parseInt(password[i])) == false) {
+						hasUpperCase = true;
+					}	
 				}
 				if (password[i].toLowerCase() == password[i]) {
-					hasLowerCase = true;
+					if(Number.isInteger(parseInt(password[i])) == false) {
+						hasLowerCase = true;
+					}
 				}
 			}
 			if ((hasLowerCase == true) && (hasUpperCase == true)) {
@@ -82,7 +86,7 @@ $(document).ready(function() {
 			$('.password-error').show();
 		}
 
-		//check for a number or a symbol in the password
+		//check for a symbol in the password
 		// function checkNumberSymbol(password) {
 		// 	var passwordIsOkay = true;
 		// 	var hasUpperCase = true;
@@ -101,7 +105,7 @@ $(document).ready(function() {
 		// 	}
 		// 	return passwordIsOkay;
 		// }
-		
+
 
 
 
